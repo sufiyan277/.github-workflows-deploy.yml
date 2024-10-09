@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: amazon linux-latest
 
     steps:
     - name: Checkout code
@@ -34,7 +34,7 @@ jobs:
 
   deploy:
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: amazon linux-latest
 
     steps:
     - name: Checkout code
